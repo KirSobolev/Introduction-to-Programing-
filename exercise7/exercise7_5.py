@@ -29,7 +29,7 @@ for k, v in avg_winds.items():  # Counts average value of each list in dictionar
 print(f"Strongest wind today at location : {strongest_wind_city}, {strongest_wind} m/s")
 print(f"Weakest wind today at location: {weakest_wind_city}, {weakest_wind} m/s \n")
 for key, value in avg_winds.items():
-    # Most probably next if statements are hardcoded and unnecessary
+    # Most probably next if statements are hardcoded and unnecessary but can't find a better solution atm
     if key == "middle":
         key = "middle part of Finland"
     elif key == "south":
