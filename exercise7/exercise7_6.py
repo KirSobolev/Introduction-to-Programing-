@@ -36,6 +36,7 @@ reservation_input = None
 time_input = None
 matching_restaurants = []
 print("Welcome to restaurant search")
+
 while check:
     # Practising try except here. If statements allow to save already answered questions.
     try:
@@ -55,7 +56,7 @@ while check:
         print("Invalid answer, try again")
         continue
 
-# Next If statements check for exact service
+# Next If statements check for particular service
 if time_input in range(6, 11):
     service = "breakfast"
 elif time_input in range(11, 17):
