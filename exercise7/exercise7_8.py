@@ -7,6 +7,7 @@ raw_data = urllib.request.urlopen(req).read().decode("UTF-8")
 data = json.loads(raw_data)
 data_processed = []
 queues = []
+year_input = 0
 check = True
 
 while check:
@@ -32,4 +33,4 @@ for el in data_processed:  # Appends values of the queues for particular year to
         queues.append(el["nurse_queue"])
 
 result = sum(queues) / len(queues)  # Counts average value of list with queues
-print(round(result, 2))
+print(f"Average queue time in the city of Oulu on that year is: {round(result, 2)}")

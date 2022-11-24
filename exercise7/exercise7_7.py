@@ -21,7 +21,7 @@ for el in set(cities_raw):  # set(cities) consists of only city names without re
 
 warnings_sorted = sorted(warnings, key=itemgetter("updated_at"), reverse=True)  # Sorts dicts based on updated_at
 print("The latest 5 slippery weather warnings are:")
-for el in warnings_sorted[:4]:
+for el in warnings_sorted[:5]:
     print(f"{el['city']} - {el['updated_at']}")
     # This actually prints last 5 warnings,
     # but atm they are all from Oulu, so here's part which prints 5 latest cities:
