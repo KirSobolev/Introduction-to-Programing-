@@ -13,3 +13,4 @@ for number in numbers:  # Iterates through all numbers 2-100
         print(Back.RED + f"{number} is not prime")
     else:
         print(Back.GREEN + f"{number} is prime")
+        
